@@ -1,0 +1,98 @@
+{% load static %}
+{% load extras %}
+<!DOCTYPE HTML>
+<!--
+	Relativity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+    <title>Act On Climate Change</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
+    <link rel="icon" href="{% static 'images/isolated-monochrome-black.svg' %}">
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static "images/isolated-monochrome-black.svg" %}"
+                     width="50vw">
+                <strong>Act</strong> on Climate Change</a>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="content">
+            <img src="{% static "images/isolated-monochrome-black.svg" %}"
+                 width="150vh">
+            <h1>Act on Climate Change</h1>
+            <p>Thanks for your feedback!</p>
+            <a href="{% url 'index' %}" class="button" style="background-color: cadetblue">Home</a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a target="_blank" href="https://twitter.com/ACTonclimatech" class="icon brands alt fa-twitter"><span
+                    class="label">Twitter</span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Act-on-Climate-Change-102856707963697/" class="icon brands alt
+            fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/act.onclimatechange/" class="icon brands alt
+            fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:info@actonclimatechange.com" class="icon solid alt fa-envelope"><span
+                    class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; ActOnClimateChange. All rights reserved.</p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+<script src="{% static 'assets/js/browser.min.js' %}"></script>
+<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'assets/js/util.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+</body>
+</html>

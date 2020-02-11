@@ -1,0 +1,319 @@
+{% load static %}
+{% load extras %}
+<!DOCTYPE HTML>
+<!--
+	Relativity by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+<head>
+    <title>Act On Climate Change</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}"/>
+    <link rel="icon" href="{% static 'images/isolated-monochrome-black.svg' %}">
+    <meta property="og:site_name" content="Act On Climate Change"/>
+    <meta property="og:url" content="https://actonclimatechange.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="The Climate Crisis is Not Waiting"/>
+    <meta name="title" property="og:title" content="Act On Climate Change"/>
+    <meta property="og:image" content="{% static 'images/default.png' %}"/>
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header" class="alt">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="{% url 'index' %}">
+                <img src="{% static "images/isolated-monochrome-black.svg" %}"
+                     width="50vw">
+                <strong>Act</strong> on Climate Change</a>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#banner">Home</a></li>
+                <li><a href="#politicians">Contact Politicians</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="content">
+            <img src="{% static "images/isolated-monochrome-black.svg" %}"
+                 width="150vh">
+            <h1>Act on Climate Change</h1>
+            <p>The Climate Crisis is Not Waiting</p>
+        </div>
+        <a href="#first" class="more scrolly">Learn More</a>
+    </section>
+
+    <!-- Section -->
+    <section class="main alt" id="first">
+        <header>
+            <h2>See for Yourself</h2>
+            <p>Don't let us tell you about the climate crisis. Let the data speak for itself...</p>
+        </header>
+        <div class="inner">
+            <article class="post alt deskContent" style="text-align: left; background-color: white; padding: 8px">
+                <header>
+                    <span class="category"><b style="color: #3dc5ad">The Nature Conservancy</b></span>
+                    <h3>US Temperature Over Time</h3>
+                </header>
+                <p>Observe the average earth surface temperature through the years by US state. Donate to the Nature
+                    Conservancy to "support the most effective solutions to the environment's challenges".
+                </p>
+                <object style="width: 100%; min-height: 650px;" data=
+                        "{% static 'temp-plot (15).html' %}"></object>
+                <ul class="actions">
+                    <li><a target="_blank" href="https://support.nature.org/site/Donation2?df_id=10420&10420.donation=form1" class="button next">Donate</a></li>
+                </ul>
+            </article>
+            <article class="post style1 phoneContent" style="text-align: left; background-color: white; padding: 8px">
+                <div class="content" style="padding-top: 50px">
+                                    <div class="inner" style="padding-top: 20px"><img style="max-width: 80vw;"
+                                                                  src="{% static 'images/temps.gif' %}"/></div>
+                <header>
+                    <span class="category">The Nature Conservancy</span>
+                    <h3>US Temperature Over Time</h3>
+                </header>
+
+                <p>Observe the average earth surface temperature through the years by US state. Donate to the Nature
+                    Conservancy to "support the most effective solutions to the environment's challenges".
+                </p>
+                </div>
+                                <ul class="actions" style="padding-top: 15px">
+                    <li><a target="_blank" href="https://support.nature.org/site/Donation2?df_id=10420&10420.donation=form1" class="button next">Donate</a></li>
+                </ul>
+
+            </article>
+            <article class="post style2">
+                <div class="content" style="padding-top: 50px">
+                    <header>
+                        <span class="category">UNICEF</span>
+                        <h3>Natural Disasters</h3>
+                    </header>
+                    <p>Take a look at the frequency of natural disasters from 1900-2020. Click the link below to
+                        donate to UNICEF's Emergency Disaster and Relief program.</p>
+                    <ul class="actions">
+                        <li><a target="_blank" href="https://www.unicefusa.org/mission/emergencies" class="button
+                        next">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="inner" style="padding-top: 20px"><img style="background-size: contain; width: 100%" src="
+{% static 'images/Natural Disasters 1900-2020.png' %}"
+                                                                  alt=""/></div>
+            </article>
+            <article class="post style2 alt">
+                <div class="content">
+                    <header style="padding-top: 70px">
+                        <span class="category">Ice911</span>
+                        <h3>Ice Sheets</h3>
+                    </header>
+                    <p>Watch the ice sheets melt before your eyes since 2002. Want to help? Ice911 Research is a
+                        nonprofit dedicated to proving to the world that they can safely preserve and restore the Arctic
+                        ice. (By the way, 1 gigatonne = 1,000,000,000 tons)</p>
+                    <ul class="actions">
+                        <li><a target="_blank" href="https://www.ice911.org/" class="button next">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="image" style="padding-top: 20px;"><img style=" background-size:
+                contain; width: 100%"
+                                                                     src="
+{% static 'images/glacier.gif' %}" alt=""/></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="main" id="politicians">
+        <header>
+            <h2>Contact your representative</h2>
+            <p>Scroll to find your state and contact your representative now!</p>
+        </header>
+
+        <div class="tab inner scrolling-wrapper" style="max-height: 500px; max-width: 80vw; overflow-y: scroll;
+        background-color: #909090; border-radius: 50px; display: flex; padding-left: 20vmin; padding-right: 20vmin">
+            <ul class="faces">
+                {% for state in distinct_state %}
+                    {% if state.state != 'Puerto Rico' and state.state != 'American Samoa' and state.state != 'Guam' and state.state != 'Northern Mariana Islands' and state.state != 'District of Columbia' and state.state != 'State' and state.state != 'Virgin Islands' %}
+                        <li class="card" style="padding-top: 5vh">
+                            <span class="image"><img src="{% static 'flags/' %}{{ state.state }}-small.png"></span>
+                            <h3>
+                                <button class="tablinks" onclick="openCity(event,
+                                        '{{ state.state }}')">
+                                    {{ state.state }}</button>
+                            </h3>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+
+
+        <div style="padding-top: 10vh; padding-left: 5vw; padding-right: 5vw" class="inner">
+            {% for state in distinct_state %}
+                <div id="{{ state.state }}" class="tabcontent">
+                    <h3 class="align-center">{{ state.state|lower }}</h3>
+                    <table>
+                        <thead>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        </thead>
+                        <tbody>
+                        {% for politician in politicians %}
+                            {% if politician.state == state.state %}
+                                <tr>
+                                    <td>{{ politician.name }}</td>
+                                    <td>{{ politician.phone_number }}</td>
+                                </tr>
+                            {% endif %}
+                        {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+            {% endfor %}
+        </div>
+
+    </section>
+
+    <!-- Section -->
+    <section class="main accent2" id="news">
+        <header>
+            <h2>In The News</h2>
+        </header>
+        <div class="inner">
+            <article class="post alt">
+                <div class="content">
+                    <header>
+                        <span class="category">Robbie Harris | February 6, 2020</span>
+                        <h3>Coronavirus and Climate Change</h3>
+                    </header>
+                    <p>Scientists say we can expect more viruses from the corona family, like the one currently
+                        afflicting thousands of people primarily in China. And one of the reasons for that is climate
+                        change.</p>
+                    <ul class="actions">
+                        <li><a target="_blank" href="https://www.wvtf.org/post/coronavirus-and-climate-change#stream/0"
+                               class="button next">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image" data-position="center"><img src="{% static 'images/corona.jpg' %}"
+                                                               alt=""/></div>
+            </article>
+            <article class="post">
+                <div class="content">
+                    <header>
+                        <span class="category">Connor Perrett | February 8, 2020</span>
+                        <h3>A few climate models are now predicting an unprecedented and alarming spike in temperatures
+                            - perhaps as much as 5 degrees Celsius</h3>
+                    </header>
+                    <p>Several recent climate models have suggested the Earth's climate could warm to a far higher
+                        temperature than scientists previously predicted, according to a report from Bloomberg.
+                    </p>
+                    <ul class="actions">
+                        <li><a target="_blank" href="https://www.businessinsider.com/global-warming-climate-models-higher-than-usual-confusing-scientists-2020-2"
+                               class="button next">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image" data-position="center"><img src="{% static 'images/glacier.jpg' %}"
+                                                               alt=""/></div>
+            </article>
+            <article class="post alt">
+                <div class="content">
+                    <header>
+                        <span class="category">Matt Simon | February 7, 2020</span>
+                        <h3>Want to Fight Climate Change? Stop Believing These Myths</h3>
+                    </header>
+                    <p>WIRED sat down with Jaccard to talk about the myths he’d like to bust, and how humanity—both
+                        individuals and governments—can think more realistically about solving the greatest problem our
+                        species has ever faced.</p>
+                    <ul class="actions">
+                        <li><a target="_blank" href="https://www.wired.com/story/guide-to-climate-success/" class="button
+                        next">Learn More</a></li>
+                    </ul>
+                </div>
+                <div class="image" data-position="center"><img src="{% static 'images/pollute.jpg' %}"
+                                                               alt=""/></div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Section -->
+    <section class="main alt special" id="contact">
+        <header>
+            <h2>What do you want to see?</h2>
+            <p>Let us know about any interesting articles, datasets, pictures, or anything else that you think
+                people should see!</p>
+        </header>
+        <div class="inner narrow">
+            <form method="POST">
+                {{ form.non_field_errors }}
+                {% csrf_token %}
+                <div class="fields">
+                    {{ form.as_table }}
+                </div>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="icons">
+            <li><a target="_blank" href="https://twitter.com/ACTonclimatech" class="icon brands alt fa-twitter"><span
+                    class="label">Twitter</span></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/Act-on-Climate-Change-102856707963697/" class="icon brands alt
+            fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/act.onclimatechange/" class="icon brands alt
+            fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:info@actonclimatechange.com" class="icon solid alt fa-envelope"><span
+                    class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; ActOnClimateChange. All rights reserved.</p>
+    </footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+<script src="{% static 'assets/js/browser.min.js' %}"></script>
+<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'assets/js/util.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        document.getElementById(cityName).scrollIntoView(false);
+    }
+</script>
+
+</body>
+</html>
