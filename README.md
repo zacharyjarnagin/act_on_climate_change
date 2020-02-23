@@ -6,6 +6,10 @@ and change `DEBUG` to `True`. Then, contact me at zjarnagin1@gmail.com
 for a copy of the `secrets.json` file. Add that to the top level directoy.
 After that, you can host locally!
 
+## TODO:
+Use this API for our representative information:
+https://sunlightlabs.github.io/congress/
+
 ## Sources:
 todo... use below links as rough guide
 ### Oceans/Glaciers
